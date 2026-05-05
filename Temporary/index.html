@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Romar Lourd Lymanuel T. Sescon — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=Raleway:ital,wght@0,300;0,400;0,500;0,600;1,300&family=Playfair+Display:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div id="cursor"></div>
+  <div id="cursor-dot"></div>
+  <div id="progress-bar"></div>
+
+  <!-- NAV -->
+  <nav>
+    <a class="nav-logo" href="#hero">
+      <span class="monocle"></span>
+      Romar Lourd Lymanuel T. Sescon
+    </a>
+
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#organization">Org</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#contacts">Contact</a></li>
+    </ul>
+
+    <button id="theme-toggle">
+      <span id="toggle-icon">🌙</span>
+      <span id="toggle-label">Light</span>
+    </button>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="stars" id="stars"></div>
+    <div class="moon-bg"></div>
+
+    <div class="card-float" style="left:7%;font-size:2.2rem;animation-duration:18s;animation-delay:0s;">♠</div>
+    <div class="card-float" style="left:20%;font-size:1.6rem;animation-duration:22s;animation-delay:4s;">♥</div>
+    <div class="card-float" style="left:74%;font-size:1.6rem;animation-duration:16s;animation-delay:2s;">♦</div>
+    <div class="card-float" style="left:88%;font-size:2.2rem;animation-duration:24s;animation-delay:7s;">♣</div>
+    <div class="card-float" style="left:54%;font-size:1.9rem;animation-duration:19s;animation-delay:11s;">♠</div>
+    <div class="card-float" style="left:36%;font-size:1.6rem;animation-duration:21s;animation-delay:5s;">♦</div>
+
+    <div class="hero-eyebrow"><span class="diamond"></span>Portfolio<span class="diamond"></span></div>
+    <p class="hero-greeting">Hi, I'm</p>
+    <h1 class="hero-name">
+      Romar Lourd Lymanuel T.
+      <span class="hero-name-accent">Sescon</span>
+    </h1>
+    <p class="hero-degree">Bachelor of Science in Information Technology</p>
+    <p class="hero-school">Cebu Institute of Technology — University</p>
+    <div class="hero-divider"><span class="hero-divider-icon">♦</span></div>
+    <a href="resume.pdf" class="btn-cv" target="_blank">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3"/>
+      </svg>
+      Download CV
+    </a>
+    <div class="scroll-hint">
+      <div class="scroll-line"></div>
+      <span class="scroll-text">Scroll</span>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="container">
+      <div class="section-label">01</div>
+      <h2 class="section-title">About <em>Me</em></h2>
+      <div class="about-layout">
+        <div class="about-text reveal">
+          <p>I am a <strong>Bachelor of Science in Information Technology</strong> student with a genuine curiosity for everything IT has to offer. I'm on a journey to explore the vast landscape of technology — from software development to networks, systems, and beyond.</p>
+          <p>I want to learn what IT is truly all about — not just the surface, but the logic, the craft, and the creativity behind it all.</p>
+          <p>I was born and raised in <strong>Minglanilla, Cebu City</strong>, and I carry the values of my community as I pursue my academic and professional goals.</p>
+          <div class="quote-card">
+            <p>There is no such thing as an unsolvable puzzle. There's always a way — you just have to be willing to look for it.</p>
+            <cite>— Inspired by Kaito Kid</cite>
+          </div>
+        </div>
+        <div class="about-photo-col reveal" style="transition-delay:.15s">
+          <div class="photo-frame">
+            <img src="face.png" alt="Romar Lourd Lymanuel T. Sescon" class="photo-img">
+            <div class="frame-corner-br"></div>
+          </div>
+          <div class="photo-caption">
+            <strong>Romar Lourd Lymanuel T. Sescon</strong>
+            <span>BS Information Technology</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <div class="container">
+      <div class="section-label">02</div>
+      <h2 class="section-title">My <em>Skills</em></h2>
+      <div class="skills-grid">
+        <div class="skill-card reveal">
+          <span class="skill-icon">⌨️</span>
+          <div class="skill-name">C Language</div>
+          <div class="skill-level-label">Beginner</div>
+          <div class="skill-bar"><div class="skill-fill" style="--w:25%"></div></div>
+          <div class="skill-note">Still exploring fundamentals of C programming and logic building.</div>
+        </div>
+        <div class="skill-card reveal" style="transition-delay:.1s">
+          <span class="skill-icon">🌐</span>
+          <div class="skill-name">HTML</div>
+          <div class="skill-level-label">Beginner – Learning</div>
+          <div class="skill-bar"><div class="skill-fill" style="--w:35%"></div></div>
+          <div class="skill-note">Comfortable with markup structure; still mastering semantic HTML.</div>
+        </div>
+        <div class="skill-card reveal" style="transition-delay:.2s">
+          <span class="skill-icon">🎨</span>
+          <div class="skill-name">CSS</div>
+          <div class="skill-level-label">Beginner – Learning</div>
+          <div class="skill-bar"><div class="skill-fill" style="--w:30%"></div></div>
+          <div class="skill-note">Getting familiar with styling and layout concepts.</div>
+        </div>
+        <div class="skill-card reveal" style="transition-delay:.3s">
+          <span class="skill-icon">⚡</span>
+          <div class="skill-name">JavaScript</div>
+          <div class="skill-level-label">Beginner</div>
+          <div class="skill-bar"><div class="skill-fill" style="--w:20%"></div></div>
+          <div class="skill-note">Just beginning to dive into interactivity and scripting.</div>
+        </div>
+      </div>
+      <p class="skills-disclaimer reveal">♦ &nbsp; Skill proficiency is honest — every master was once a beginner. &nbsp; ♦</p>
+    </div>
+  </section>
+
+  <!-- ORGANIZATION -->
+  <section id="organization">
+    <div class="container">
+      <div class="section-label">03</div>
+      <h2 class="section-title"><em>Organization</em></h2>
+      <div class="org-card reveal">
+        <div class="org-emblem">🩸</div>
+        <div class="org-details">
+          <h3>Philippine Red Cross</h3>
+          <div class="org-role">
+            <span>Member</span>
+            <span class="org-badge">CIT-U Chapter</span>
+          </div>
+          <p>Actively participating in humanitarian missions and community service as a member of the Philippine Red Cross at CIT-U.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section id="education">
+    <div class="container">
+      <div class="section-label">04</div>
+      <h2 class="section-title"><em>Education</em></h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-period">2025 — Present</div>
+          <div class="timeline-school">Cebu Institute of Technology — University</div>
+          <div class="timeline-degree">Bachelor of Science in Information Technology</div>
+          <div class="timeline-badge"><span>♦</span> College</div>
+        </div>
+        <div class="timeline-item" style="transition-delay:.15s">
+          <div class="timeline-dot"></div>
+          <div class="timeline-period">2018 — 2025</div>
+          <div class="timeline-school">Cebu Institute of Technology — University</div>
+          <div class="timeline-degree">Junior &amp; Senior High School</div>
+          <div class="timeline-badge"><span>♦</span> High School</div>
+        </div>
+        <div class="timeline-item" style="transition-delay:.3s">
+          <div class="timeline-dot"></div>
+          <div class="timeline-period">2013 — 2018</div>
+          <div class="timeline-school">Minglanilla Special Science Elementary School</div>
+          <div class="timeline-degree">Elementary Education</div>
+          <div class="timeline-badge"><span>♦</span> Elementary</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PORTFOLIO -->
+  <section id="portfolio">
+    <div class="container">
+      <div class="section-label">05</div>
+      <h2 class="section-title">My <em>Portfolio</em></h2>
+      <p class="portfolio-sub reveal">A collection of web activities and projects built throughout my BS IT journey. Click <strong>View</strong> to visit each live site.</p>
+      <div class="portfolio-grid">
+
+        <div class="project-card reveal" style="transition-delay:.00s">
+          <div class="project-header"><span class="project-num">01</span><span class="project-suit">♠</span></div>
+          <div class="project-body">
+            <div class="project-title">Technically Legal</div>
+            <div class="project-desc">A creative featured web project — fully deployed and showcasing combined web dev skills.</div>
+            <span class="project-tag featured-tag">Featured ♦</span>
+          </div>
+          <a href="https://technicallylegal.vercel.app/" target="_blank" rel="noopener" class="project-btn">View ↗</a>
+        </div>
+
+        <div class="project-card reveal" style="transition-delay:.05s">
+          <div class="project-header"><span class="project-num">02</span><span class="project-suit">♥</span></div>
+          <div class="project-body">
+            <div class="project-title">Activity 1</div>
+            <div class="project-desc">First web activity — laying the foundation with HTML structure and basics.</div>
+            <span class="project-tag">HTML</span>
+          </div>
+          <a href="https://act1ses.vercel.app/" target="_blank" rel="noopener" class="project-btn">View ↗</a>
+        </div>
+
+        <div class="project-card reveal" style="transition-delay:.10s">
+          <div class="project-header"><span class="project-num">03</span><span class="project-suit">♦</span></div>
+          <div class="project-body">
+            <div class="project-title">Activity 2</div>
+            <div class="project-desc">Exploring web layouts and structural elements in HTML.</div>
+            <span class="project-tag">HTML</span>
+          </div>
+          <a href="https://act2ses.vercel.app/" target="_blank" rel="noopener" class="project-btn">View ↗</a>
+        </div>
+
+        <div class="project-card reveal" style="transition-delay:.15s">
+          <div class="project-header"><span class="project-num">04</span><span class="project-suit">♣</span></div>
+          <div class="project-body">
+            <div class="project-title">Activity 3</div>
+            <div class="project-desc">Styling and visual design practice using CSS fundamentals.</div>
+            <span class="project-tag">CSS</span>
+          </div>
+          <a href="https://act3ses.vercel.app/" target="_blank" rel="noopener" class="project-btn">View ↗</a>
+        </div>
+
+        <div class="project-card reveal" style="transition-delay:.20s">
+          <div class="project-header"><span class="project-num">05</span><span class="project-suit">♠</span></div>
+          <div class="project-body">
+            <div class="project-title">Activity 4</div>
+            <div class="project-desc">Diving deeper into CSS — colors, fonts, and responsive design.</div>
+            <span class="project-tag">CSS</span>
+          </div>
+          <a href="https://act4ses.vercel.app/" target="_blank" rel="noopener" class="project-btn">View ↗</a>
+        </div>
+
+        <div class="project-card reveal" style="transition-delay:.25s">
+          <div class="project-header"><span class="project-num">06</span><span class="project-suit">♥</span></div>
+          <div class="project-body">
+            <div class="project-title">Activity 5</div>
+            <div class="project-desc">Building interactive elements and practicing CSS layout models.</div>
+            <span class="project-tag">CSS</span>
+          </div>
+          <a href="https://act5sesc.vercel.app/" target="_blank" rel="noopener" class="project-btn">View ↗</a>
+        </div>
+
+        <div class="project-card reveal" style="transition-delay:.30s">
+          <div class="project-header"><span class="project-num">07</span><span class="project-suit">♦</span></div>
+          <div class="project-body">
+            <div class="project-title">Activity 7</div>
+            <div class="project-desc">Exploring JavaScript interactivity and dynamic web content.</div>
+            <span class="project-tag">JavaScript</span>
+          </div>
+          <a href="https://act7ses.vercel.app/" target="_blank" rel="noopener" class="project-btn">View ↗</a>
+        </div>
+
+        <div class="project-card reveal" style="transition-delay:.35s">
+          <div class="project-header"><span class="project-num">08</span><span class="project-suit">♣</span></div>
+          <div class="project-body">
+            <div class="project-title">Activity 8</div>
+            <div class="project-desc">Advanced HTML &amp; CSS applied to a full structured web page.</div>
+            <span class="project-tag">HTML · CSS</span>
+          </div>
+          <a href="https://act8ses.vercel.app/" target="_blank" rel="noopener" class="project-btn">View ↗</a>
+        </div>
+
+        <div class="project-card reveal" style="transition-delay:.40s">
+          <div class="project-header"><span class="project-num">09</span><span class="project-suit">♠</span></div>
+          <div class="project-body">
+            <div class="project-title">Activity 9</div>
+            <div class="project-desc">Web project with enhanced scripting and user interaction.</div>
+            <span class="project-tag">JavaScript</span>
+          </div>
+          <a href="https://act9ses.vercel.app/" target="_blank" rel="noopener" class="project-btn">View ↗</a>
+        </div>
+
+        <div class="project-card reveal" style="transition-delay:.45s">
+          <div class="project-header"><span class="project-num">10</span><span class="project-suit">♥</span></div>
+          <div class="project-body">
+            <div class="project-title">Activity 10</div>
+            <div class="project-desc">Comprehensive activity combining HTML, CSS, and JS skills.</div>
+            <span class="project-tag">HTML · CSS · JS</span>
+          </div>
+          <a href="https://act10ses.vercel.app/" target="_blank" rel="noopener" class="project-btn">View ↗</a>
+        </div>
+
+        <div class="project-card reveal" style="transition-delay:.50s">
+          <div class="project-header"><span class="project-num">11</span><span class="project-suit">♦</span></div>
+          <div class="project-body">
+            <div class="project-title">Activity 11</div>
+            <div class="project-desc">Final activity showcasing accumulated web development knowledge.</div>
+            <span class="project-tag">HTML · CSS · JS</span>
+          </div>
+          <a href="https://act11ses-dza6.vercel.app/" target="_blank" rel="noopener" class="project-btn">View ↗</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACTS -->
+  <section id="contacts">
+    <div class="container">
+      <div class="section-label">06</div>
+      <h2 class="section-title"><em>Contact</em></h2>
+      <p class="contact-intro reveal">Send a message and find me on the map.</p>
+
+      <div class="contact-layout reveal">
+
+        <!-- Form -->
+        <div class="contact-form-card">
+          <div class="form-group">
+            <label for="c-name">Name</label>
+            <input type="text" id="c-name" placeholder="Your name">
+          </div>
+          <div class="form-group">
+            <label for="c-email">Email</label>
+            <input type="email" id="c-email" placeholder="you@example.com">
+          </div>
+          <div class="form-group">
+            <label for="c-msg">Message</label>
+            <textarea id="c-msg" rows="6" placeholder="Write your message..."></textarea>
+          </div>
+          <button class="btn-send" id="btn-send">Send</button>
+          <p class="send-feedback" id="send-feedback"></p>
+        </div>
+
+        <!-- Map -->
+        <div class="contact-map-card">
+          <div class="map-header">
+            <span>📍</span>
+            <strong>Find me here</strong>
+          </div>
+          <div class="map-wrapper">
+            <iframe
+              title="Minglanilla, Cebu"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62893.78639045498!2d123.76506!3d10.2425!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33a999e5b4e42f8f%3A0xb7c3d8b7e4c0a0a1!2sMinglanilla%2C%20Cebu!5e0!3m2!1sen!2sph!4v1700000000000!5m2!1sen!2sph"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+          <div class="map-label">
+            <span class="map-dot"></span>
+            Minglanilla, Cebu, Philippines
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-logo">Romar Lourd Lymanuel T. Sescon</div>
+    <div class="footer-divider"></div>
+    <p>♠ &nbsp; BS Information Technology &nbsp; · &nbsp; CIT-U &nbsp; ♠</p>
+    <p style="margin-top:.5rem;font-size:.6rem;opacity:.35;">Built with passion &amp; curiosity — 2025</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
