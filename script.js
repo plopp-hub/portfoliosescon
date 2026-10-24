@@ -9,7 +9,7 @@ document.addEventListener('mousemove', e => {
   cursorDot.style.top  = e.clientY + 'px';
 });
 
-document.querySelectorAll('a, button, .skill-card, .contact-form-card, .org-card, .timeline-item, .photo-frame, .project-card, .project-btn')
+document.querySelectorAll('a, button, .skill-card, .contact-card, .org-card, .timeline-item, .photo-frame, .project-card, .project-btn, .cert-card')
   .forEach(el => {
     el.addEventListener('mouseenter', () => cursor.classList.add('hover'));
     el.addEventListener('mouseleave', () => cursor.classList.remove('hover'));
@@ -78,14 +78,15 @@ const secObs = new IntersectionObserver(entries => {
 sections.forEach(s => secObs.observe(s));
 
 /* ── Mobile Hamburger Menu ─────────────────────────────── */
-const hamburger = document.getElementById('hamburger');
-const navMenu   = document.getElementById('nav-links');
+const hamburger  = document.getElementById('hamburger');
+const navMenu    = document.getElementById('nav-links');
 
 hamburger.addEventListener('click', () => {
   hamburger.classList.toggle('open');
   navMenu.classList.toggle('open');
 });
 
+/* Close menu when any nav link is tapped */
 navLinks.forEach(link => {
   link.addEventListener('click', () => {
     hamburger.classList.remove('open');
@@ -93,41 +94,10 @@ navLinks.forEach(link => {
   });
 });
 
+/* Close menu when clicking outside */
 document.addEventListener('click', e => {
   if (!hamburger.contains(e.target) && !navMenu.contains(e.target)) {
     hamburger.classList.remove('open');
     navMenu.classList.remove('open');
   }
-});
-
-/* ── Contact Form ──────────────────────────────────────── */
-const btnSend  = document.getElementById('btn-send');
-const feedback = document.getElementById('send-feedback');
-
-btnSend.addEventListener('click', () => {
-  const name  = document.getElementById('c-name').value.trim();
-  const email = document.getElementById('c-email').value.trim();
-  const msg   = document.getElementById('c-msg').value.trim();
-
-  if (!name || !email || !msg) {
-    feedback.textContent = '♦ Please fill in all fields.';
-    feedback.className   = 'send-feedback error';
-    return;
-  }
-
-  const emailOk = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
-  if (!emailOk) {
-    feedback.textContent = '♦ Please enter a valid email address.';
-    feedback.className   = 'send-feedback error';
-    return;
-  }
-
-  feedback.textContent = '✓ Message sent! Thank you, ' + name + '.';
-  feedback.className   = 'send-feedback success';
-
-  document.getElementById('c-name').value  = '';
-  document.getElementById('c-email').value = '';
-  document.getElementById('c-msg').value   = '';
-
-  setTimeout(() => { feedback.textContent = ''; feedback.className = 'send-feedback'; }, 5000);
 });
